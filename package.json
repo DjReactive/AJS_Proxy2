@@ -1,0 +1,28 @@
+{
+  "name": "6_proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DjReactive/AJS_Proxy.git"
+  },
+  "author": "djreactive",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DjReactive/AJS_Proxy/issues"
+  },
+  "homepage": "https://github.com/DjReactive/AJS_Proxy#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "jest": "^27.4.4"
+  },
+  "dependencies": {
+    "core-js": "^3.19.3"
+  }
+}
