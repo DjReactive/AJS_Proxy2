@@ -11,15 +11,32 @@
 //   expect(orderByProps(obj, ['level', 'name'])).toEqual(objEqual);
 // });
 
-import {character, getSkill} from './app.js';
+import { getSkill } from './app';
 
-test('Get skill of character (id)', () => {
-  const {id, name, icon, description = 'Описание недоступно'} = getSkill(8);
-  expect(id).toEqual(8);
+test('Get skill of character', () => {
+  const {
+    id, name, icon, description = 'Описание недоступно',
+  } = getSkill(8);
+  expect({
+    id, name, icon, description,
+  }).toEqual({
+    id: 8,
+    name: 'Двойной выстрел',
+    icon: 'http://...',
+    description: 'Двойной выстрел наносит двойной урон',
+  });
 });
 
 test('Get skill of character (desc)', () => {
-  const msg = 'Описание недоступно';
-  const {id, name, icon, description = msg} = getSkill(9);
-  expect(description).toEqual(msg);
+  const {
+    id, name, icon, description = 'Описание недоступно',
+  } = getSkill(9);
+  expect({
+    id, name, icon, description,
+  }).toEqual({
+    id: 9,
+    name: 'Нокаутирующий удар',
+    icon: 'http://...',
+    description: 'Описание недоступно',
+  });
 });

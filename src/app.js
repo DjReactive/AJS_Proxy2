@@ -37,17 +37,17 @@ export const character = {
       id: 8,
       name: 'Двойной выстрел',
       icon: 'http://...',
-      description: 'Двойной выстрел наносит двойной урон'
+      description: 'Двойной выстрел наносит двойной урон',
     },
     {
       id: 9,
       name: 'Нокаутирующий удар',
-      icon: 'http://...'
+      icon: 'http://...',
       // <- обратите внимание, описание "засекречено"
-    }
-  ]
-}
+    },
+  ],
+};
 
-export function getSkill (num) {
-  return Object.values(character.special).find(skill => skill.id === num);
+export function getSkill(num) {
+  return Object.values(character.special).find((skill) => skill.id === num);
 }
